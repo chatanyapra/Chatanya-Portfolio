@@ -1,0 +1,20 @@
+.container{
+    position: absolute;
+    top: 345px;
+    left: 0; right: 0;
+    z-index: 5;
+}
+/* .sqiggle{
+} */
+.sqiggle::after{
+    content: '';
+    position: absolute;left: 0;top: 500px;
+    width: 100px; height: 100px;
+    /* background-color: aqua; */
+    z-index: 100;
+}
+.path-svg{
+    z-index: 10;
+    -webkit-filter: drop-shadow( 3px 3px 10px #FFE6E6);
+    filter: drop-shadow(3px 3px 10px 20px rgb(255, 241, 81));
+}

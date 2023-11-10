@@ -1,0 +1,60 @@
+.navbar-main{
+    position: absolute;
+    top: 0; width: 100%;
+}
+.navbar_logo{
+    background: linear-gradient(to left, #0000cc 16%, rgb(17 24 39) 89%);
+    border-bottom: 2px solid #0000cc;
+}
+.triangle {
+    position: absolute;
+    right: 0; top: 0;
+	border-top: 64px solid transparent;
+	border-right: 50px solid rgb(17 24 39);
+}
+.nav-btn {
+    width: 120px;
+    position: relative;
+    height: 35px;
+    border: 3px ridge #0000cc;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3.5px 0;
+  }
+
+.nav-btn::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: rgb(17 24 39);
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.nav-btn::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: rgb(17 24 39);
+    transition: 0.5s;
+}
+  .nav-btn:hover::before, .nav-btn:hover::after {
+    transform: scale(0)
+  }
+  
+  .nav-btn:hover {
+    box-shadow: inset 0px 0px 25px #0000cc;
+  }
