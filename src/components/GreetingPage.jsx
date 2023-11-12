@@ -48,6 +48,9 @@ export default function GreetingPage() {
     transform: `translateX(-${scrollPosition}px) scaleX(-1)`,
     transition: 'transform 0.5s ease-out',
   };
+  const gearBox={
+    transform: `rotate(${scrollPosition * 0.3}deg)`
+  };
   return (
     <div style={{height: '2500px'}}>
       <div className='image-main flex space-around bg-gray-900'>
@@ -59,8 +62,23 @@ export default function GreetingPage() {
                 <Cursor cursorColor='white' cursorStyle= {symbol} />
           </div>
       </div>
-      <div ref={box2Container} className="box2-container overflow-hidden absolute w-full bg-gray-900" style={{height: '750px', top: '760px'}}>
-        <img className='image-robot' style={imageStyle} ref={ImageMove} src={Mainimage} alt="" />
+      <div ref={box2Container} className="box2-container overflow-hidden absolute w-full bg-gray-900" style={{height: '700px', top: '712px'}}>
+          <div className='aboutme-box text-white bg-slate-600 rounded-2xl relative backdrop-opacity-10 backdrop-invert bg-white/30 py-7 overflow-x-hidden'>
+            <i style={gearBox} className="gear-icon absolute fa-solid fa-gear"></i>
+            <h1 className='text-3xl mx-12 my-6'>About me</h1>
+            {/* <span className='span-line absolute bg-teal-300'></span> */}
+            <div className='line-main absolute bg-teal-300'>
+              <div className='scanner relative bg-white'></div>
+            </div>
+            <div className='m-auto text-xl w-10/12'>
+              Hello, I'm Chatanya Pratap, a passionate and versatile web developer with expertise in a diverse range of technologies. With a foundation built on HTML, CSS, and JavaScript, I navigate seamlessly across the realms of Laravel, PHP, and React.js, breathing life into innovative and user-centric web applications.
+            </div>
+            <h1 className='text-2xl mx-12 mt-10 mb-4'>My Journey</h1>
+            <div className='m-auto text-xl w-10/12'>
+              Driven by a passion for problem-solving, I embarked on my journey in web development with a focus on crafting seamless and visually appealing solutions. From the intricacies of frontend design to the robustness of backend development, I have honed my skills to deliver results that exceed expectations.
+            </div>
+      </div>
+        <img className='image-robot' style={imageStyle} ref={ImageMove} src={Mainimage} alt="..." />
       </div>
     </div>
   )
