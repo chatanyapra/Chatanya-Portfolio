@@ -1,4 +1,5 @@
 import './App.css'
+import GetInTouch from './components/GetInTouch';
 import GreetingPage from './components/GreetingPage'
 import Navbar from './components/Navbar'
 import SvgLine from "./components/SvgLine";
@@ -11,14 +12,16 @@ function App() {
       <SvgLine></SvgLine>
       <Navbar></Navbar>
       <GreetingPage></GreetingPage>
-      <div className='w-full justify-evenly flex flex-wrap relative m-auto p-16 bg-gray-900'>
+      <div className='w-full justify-evenly flex flex-wrap relative m-auto pt-40 p-16 bg-gray-900'>
+        <h1 className='absolute top-20'  style={{ fontFamily: "Exo, sans-serif"}}>My Work</h1>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
-      </div>  
+      </div> 
+      <GetInTouch></GetInTouch> 
     </div>
   )
 }
