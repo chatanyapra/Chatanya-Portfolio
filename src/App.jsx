@@ -8,7 +8,7 @@ import WorkPage from './components/WorkPage';
 function App() {
 
   return (
-    <div className='web-container'>
+    <div className='web-container h-screen'>
       <SvgLine></SvgLine>
       <Navbar></Navbar>
       <GreetingPage></GreetingPage>
