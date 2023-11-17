@@ -12,9 +12,6 @@
     --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;    
     --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
 }
-/* body {
-    background-color: var(--var-main-darkest);
-} */
 
 img {
     width: 100%;
@@ -38,7 +35,7 @@ span {
     width: 100%;
     max-width: 350px;
     margin: 80px 30px;
-    background-color: var(--var-card-dark);
+    /* background-color: var(--var-card-dark); */
     border-radius: 15px;
     margin-bottom: 1rem;
     padding: 2rem;
@@ -117,3 +114,37 @@ img.eye {
         font-size: 18px;
     }
 }
+.info-button{
+  /* width: 120px; */
+  height: 40px;
+  padding: 4px 17px;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.info-button:hover {
+ color: white;
+}
+.info-button:after {
+  content: "";
+  background: black;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+.info-button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+ }
