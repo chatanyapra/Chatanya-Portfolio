@@ -9,11 +9,11 @@ function App() {
 
   return (
     <div className='web-container h-screen'>
-      <SvgLine></SvgLine>
+      {/* <SvgLine></SvgLine> */}
       <Navbar></Navbar>
       <GreetingPage></GreetingPage>
-      <div className='w-full justify-evenly flex flex-wrap relative m-auto pt-40 p-16 bg-gray-900'>
-        <h1 className='absolute top-20'  style={{ fontFamily: "Exo, sans-serif"}}>My Work</h1>
+      <div className='w-full justify-evenly flex flex-wrap relative m-auto p-5 pt-60 sm:pt-40 bg-gray-900'>
+        <h1 className='absolute top-40 sm:top-20'  style={{ fontFamily: "Exo, sans-serif"}}>My Work</h1>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
         <WorkPage></WorkPage>
