@@ -1,60 +1,145 @@
 .navbar-main{
-    position: absolute;
-    top: 0; width: 100%;
+  position: fixed;
+  top: 0; width: 100%;
 }
 .navbar_logo{
-    background: linear-gradient(to left, #0000cc 16%, rgb(17 24 39) 89%);
-    border-bottom: 2px solid #0000cc;
+  background: linear-gradient(to left, #0000cc 16%, rgb(17 24 39) 89%);
+  border-bottom: 2px solid #0000cc;
 }
 .triangle {
-    position: absolute;
-    right: 0; top: 0;
-	border-top: 64px solid transparent;
-	border-right: 50px solid rgb(17 24 39);
+  position: absolute;
+  right: 0; top: 0;
+border-top: 60px solid transparent;
+border-right: 50px solid rgb(17 24 39);
 }
 .nav-btn {
-    width: 120px;
-    position: relative;
-    height: 35px;
-    border: 3px ridge #0000cc;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 3.5px 0;
-  }
+  /* width: 120px; */
+  position: relative;
+  height: 35px;
+  border: 3px ridge #0000cc;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 3.5px 0;
+}
 
 .nav-btn::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: rgb(17 24 39);
-    transition: 0.5s;
-    transform-origin: center;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: rgb(17 24 39);
+  transition: 0.5s;
+  transform-origin: center;
 }
 
 .nav-btn::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: rgb(17 24 39);
-    transition: 0.5s;
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: rgb(17 24 39);
+  transition: 0.5s;
 }
-  .nav-btn:hover::before, .nav-btn:hover::after {
-    transform: scale(0)
-  }
-  
-  .nav-btn:hover {
-    box-shadow: inset 0px 0px 25px #0000cc;
-  }
+.nav-btn:hover::before, .nav-btn:hover::after {
+  transform: scale(0)
+}
+
+.nav-btn:hover {
+  box-shadow: inset 0px 0px 25px #0000cc;
+}
+
+.sidenavbarToggle{
+  transform: translateX(10px) !important;
+  transition: transform 0.5s ease-in-out;
+}
+.sidenavbar{
+min-height: 580px;
+height: 98vh; 
+top:8px; 
+transform: translateX(-100%);
+transition: transform 0.5s ease-in-out;
+box-shadow: 0px 0px 4px -1px white;
+}
+.sidenavbar::before {
+content: "";
+width: 0; height: 0;
+position: absolute;
+top: 0; left: 0;
+border-left: 50px solid transparent;
+border-right: 350px solid transparent;
+border-top: 80px solid black;
+opacity: 0.7;
+filter: drop-shadow(0px 0px 10px white);
+}
+.sidenavbar::after {
+content: "";
+width: 0; height: 0;
+position: absolute;
+bottom: 0; right: 0;
+border-left: 350px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 80px solid black;
+opacity: 0.7;
+filter: drop-shadow(0px 0px 10px white);
+}
+/* ____________________-__________________ */
+#checkboxNavbur {
+  display: none;
+}
+
+.toggleBars {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .3s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #0000cc 0%, #66ffff 50%, #0000cc 100%);
+  border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.checkboxNavburChecked + .toggleBars .bars {
+  margin-left: 13px;
+}
+
+.checkboxNavburChecked + .toggleBars #bar2 {
+  transform: rotate(135deg);
+  margin-left: 0;
+  transform-origin: center;
+  transition-duration: .3s;
+}
+
+.checkboxNavburChecked + .toggleBars #bar1 {
+  transform: rotate(45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+
+.checkboxNavburChecked + .toggleBars #bar3 {
+  transform: rotate(-45deg);
+  transition-duration: .3s;
+  transform-origin: left center;
+}
+.overLayBoxToggle{
+  display: block !important;
+}
