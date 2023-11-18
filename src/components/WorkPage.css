@@ -34,13 +34,17 @@ span {
 .card-container {
     width: 100%;
     max-width: 350px;
-    margin: 80px 30px;
-    /* background-color: var(--var-card-dark); */
+    margin: 60px 20px;
     border-radius: 15px;
     margin-bottom: 1rem;
     padding: 2rem;
-  box-shadow: -7px -7px 5px -8px white;
+    box-shadow: -7px -7px 5px -8px white;
 }
+/* @media screen and (max-width: 720px) {
+  .card-container {
+    margin: 30px 10px;
+  }
+} */
 a.hero-image-container {
     position: relative;
     display: block;
