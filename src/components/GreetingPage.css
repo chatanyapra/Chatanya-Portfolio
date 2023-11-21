@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 .user-name{
-    width: 580px; 
+    width: 590px; 
     margin: auto 0px;
     color: white;
     font-weight: bold;
@@ -29,7 +29,9 @@
   .image-robot-container{
     width: 15%;
   }
-  .user-name{ 
+  .user-name{
+    width: 100% !important;
+    padding: 0; 
     transform: translate(-10%, 50%);
   }
 }
