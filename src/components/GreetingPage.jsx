@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import Mainimage from '../assets/robot-background-image (1).png'
-import './GreetingPage.css'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import Lottie from 'lottie-react'
 import robotAnimation from '../assets/Animation-robot.json'
@@ -42,7 +41,7 @@ export default function GreetingPage() {
   }, []);
 
   const imageStyle = {
-    transform: `translateX(-${scrollPosition}px) scaleX(-1)`,
+    transform: `translateX(-${scrollPosition *.201}%) scaleX(-1)`,
     transition: 'transform 0.5s ease-out', right: `${-1026}px`
   };
   const gearBox={
@@ -52,7 +51,7 @@ export default function GreetingPage() {
     <div style={{minHeight: '1510px'}} className='greetingBox overflow-y-scroll md:overflow-y-hidden w-full bg-gray-900 relative'>
       <div className='image-main flex space-around'>
           <div className="image-robot-container">
-            <Lottie className='robot-anim' animationData={robotAnimation} loop={false} />
+            <Lottie className='robot-anim' animationData={robotAnimation} loop={true} />
           </div>
           <div className='user-name text-left text-4xl text-gray-50 font-mono z-10' style={{ fontFamily: "Exo, sans-serif"}}><span className='text-6xl'>Hi,</span><br/>
                 <span>I am {' '} {text}</span>
@@ -80,4 +79,4 @@ export default function GreetingPage() {
       </div>
     </div>
   )
-}
+} 

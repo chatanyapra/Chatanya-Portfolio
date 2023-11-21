@@ -9,7 +9,7 @@
 .triangle {
   position: absolute;
   right: 0; top: 0;
-border-top: 60px solid transparent;
+border-top: 61px solid transparent;
 border-right: 50px solid rgb(17 24 39);
 }
 .nav-btn {

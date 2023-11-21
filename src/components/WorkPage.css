@@ -18,7 +18,7 @@ img {
     border-radius: 15px;
     display: block;
 }
-h1 {
+.projectname {
     font: var(--var-heading);
     color: var(--var-lightest);
 }

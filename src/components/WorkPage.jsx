@@ -1,5 +1,4 @@
 import React from 'react'
-import './WorkPage.css';
 
 export default function WorkPage() {
   const languageUsed = event => {
@@ -11,7 +10,7 @@ export default function WorkPage() {
           <img className="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
         </a>
         <main className="main-content">
-          <h1 className='py-5 text-xl'>Project Name</h1>
+          <h1 className='projectname py-5 text-xl'>Project Name</h1>
           <p className='text-sm'>Our Equilibrium collection promotes balance and calm.</p>
           <div className="flex-row text-blue-500  text-sm pt-4">Link-
             <a className='text-blue-500' href='#'> click here...</a>

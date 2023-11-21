@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import UserImage from '../assets/my-image.jpg'
 
 export default function Navbar() {
 
@@ -29,7 +29,7 @@ export default function Navbar() {
       </div>
       <div className='sidenavbar w-72 flex flex-col rounded-xl overflow-hidden bg-gray-900 fixed z-40 text-white'>
         <div className='w-28 h-32 overflow-hidden rounded-full bg-gray-700 outline-dashed outline-7 outline-offset-8 border-2 border-cyan-500 relative top-10 left-10'>
-          <img className='w-full h-full rounded-full' src="//picsum.photos/1920/1080" alt='...'/>
+          <img className='w-full h-full rounded-full' src={UserImage} alt='...'/>
         </div>
         <div className='w-11/12 m-auto h-96 my-24 flex flex-col'>
           <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Home</button>
