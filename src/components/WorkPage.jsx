@@ -1,13 +1,14 @@
 import React from 'react'
 
-export default function WorkPage() {
+export default function WorkPage(props) {
   const languageUsed = event => {
     event.currentTarget.nextElementSibling.classList.toggle('techBoxFull');
   }
   return (
       <div className="card-container backdrop-invert bg-black/50 backdrop-opacity-5 my-20 relative top-0">
         <a href="/" className="hero-image-container">
-          <img className="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+          <div className="m-5 font-bold absolute z-10">Portfolio</div>
+          <img className="hero-image w-full h-full relative" src={props.src} alt="Spinning glass cube"/>
         </a>
         <main className="main-content">
           <h1 className='projectname py-5 text-xl'>Project Name</h1>
