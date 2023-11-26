@@ -36,11 +36,12 @@
   }
 }
 .image-robot{
-    width: 500px;
-    height: 600px; margin-top: 70px; float: right;
+    width: 500px !important;
+    height: 600px !important; margin-top: 70px; float: right;
     filter: drop-shadow(50px 10px 100px rgba(0, 0, 255, 0.427));
     position: absolute;
     top: 80px !important;
+    right: -1046px;
 }
 .greetingBox::-webkit-scrollbar {
   display: none;

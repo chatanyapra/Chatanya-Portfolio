@@ -17,6 +17,7 @@ export default function GreetingPage() {
   const ImageMove= useRef(null);
   const box2Container= useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const screenWidth= window.innerWidth;
 
   useEffect(() => {
     const boxContainer= box2Container.current;
@@ -24,11 +25,11 @@ export default function GreetingPage() {
     const handleScroll = () => {
 
       setScrollPosition(()=>{
-        if (window.scrollY <= 700) {
+        if (window.scrollY <= 720) {
           return window.scrollY;
         }
         else{
-          return 700;
+          return 720;
         }
       });
     };
@@ -41,8 +42,8 @@ export default function GreetingPage() {
   }, []);
 
   const imageStyle = {
-    transform: `translateX(-${scrollPosition *.201}%) scaleX(-1)`,
-    transition: 'transform 0.5s ease-out', right: `${-1026}px`
+    transform: `translateX(-${(scrollPosition)*.201}%) scaleX(-1)`,
+    transition: 'transform 0.5s ease-out'
   };
   const gearBox={
     transform: `rotate(${scrollPosition * 0.3}deg)`
@@ -73,9 +74,10 @@ export default function GreetingPage() {
               <b>Innovative Solutions: </b>I approach challenges with a mindset that values innovation. Each project is an opportunity to create something unique and impactful, and I thrive on pushing the boundaries of what's possible.  
             </div>
             <div className='m-auto text-lg md:text-xl pt-5 w-10/12'>
-              <b>Continuous Learning: </b> The ever-evolving nature of technology inspires me to stay abreast of the latest trends and advancements. A commitment to lifelong learning ensures that my skills remain cutting-edge.            </div>
+              <b>Continuous Learning: </b> The ever-evolving nature of technology inspires me to stay abreast of the latest trends and advancements. A commitment to lifelong learning ensures that my skills remain cutting-edge.            
             </div>
-        <img className='image-robot' style={imageStyle} ref={ImageMove} src={Mainimage} alt="..." />
+          </div>
+            <img className='image-robot block bg-contain	' style={imageStyle} ref={ImageMove} src={Mainimage} alt="..." />
       </div>
     </div>
   )
