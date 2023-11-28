@@ -42,7 +42,7 @@ function App() {
         <WorkPage src='//picsum.photos/1920/1080' name='Quiz Exam' link='https://github.com/chatanyapra/quizFilesNew'
         language={['Php','CSS', 'HTML', 'Javascript']} about={aboutProject5[0]} desc={aboutProject5[1]}></WorkPage>
         
-        <WorkPage src='//picsum.photos/1920/1080' name='Snake Game' link='#'
+        <WorkPage src='//picsum.photos/1920/1080' name='Snake Game' link='https://chatanyaacademy.000webhostapp.com/snake.html'
         language={['CSS', 'HTML', 'Javascript']} about={aboutProject6[0]} desc={aboutProject6[1]}></WorkPage>
         
       </div> 

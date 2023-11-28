@@ -10,8 +10,8 @@ export default function WorkPage(props) {
         <a href={props.link} className="hero-image-container">
           <img className="hero-image w-full h-full relative" src={props.src} alt="Spinning glass cube"/>
         </a>
-        <main className="main-content relative">
-          <h1 className='projectname py-5 text-xl'>{props.name ? props.name : 'Project Name'}</h1>
+        <main className="main-content flex flex-col justify-between h-52">
+          <h1 className='projectname pt-5 text-xl leading-5'>{props.name ? props.name : 'Project Name'}</h1>
           <p className='text-sm'>{props.desc}</p>
           <div className="flex-row text-blue-500 text-sm pt-4">Link-
             <a className='text-blue-500' href={props.link}> click here to open</a>

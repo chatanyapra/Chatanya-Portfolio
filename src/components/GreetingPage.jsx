@@ -17,11 +17,11 @@ export default function GreetingPage() {
   const ImageMove= useRef(null);
   const box2Container= useRef(null);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const screenWidth= window.innerWidth;
+  // const screenWidth= window.innerWidth;
 
   useEffect(() => {
-    const boxContainer= box2Container.current;
-    const boxDist= boxContainer.getBoundingClientRect();
+    // const boxContainer= box2Container.current;
+    // const boxDist= boxContainer.getBoundingClientRect();
     const handleScroll = () => {
 
       setScrollPosition(()=>{
