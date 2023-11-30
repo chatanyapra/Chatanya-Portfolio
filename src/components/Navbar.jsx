@@ -1,4 +1,5 @@
 import UserImage from '../assets/my-image.jpg'
+import UserLogo from '../assets/portfolioLogo.png'
 
 export default function Navbar() {
 
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <div className='navbar-main w-full bg-gray-900 h-16 text-white flex justify-between z-20'>
-        <div className='navbar_logo w-40 h-full relative text-center pt-4'>Navbar <div className="triangle"></div></div>
+        <div className='navbar_logo w-40 h-full relative text-center'><img src={UserLogo} style={{marginTop: '-23px'}} className='ml-2 w-36 h-28'/> <div className="triangle"></div></div>
         <div className='navbtns mr-5 hidden justify-between md:flex'>
           <button className='nav-btn w-32 mx-4 my-3'>Home</button>
           <button className='nav-btn w-32 mx-4 my-3'>About </button>

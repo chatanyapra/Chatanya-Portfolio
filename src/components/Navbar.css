@@ -3,7 +3,7 @@
   top: 0; width: 100%;
 }
 .navbar_logo{
-  background: linear-gradient(to left, #0000cc 16%, rgb(17 24 39) 89%);
+  background: linear-gradient(to left top, #0000cc 50%, rgb(205, 205, 205) 95%);
   border-bottom: 2px solid #0000cc;
 }
 .triangle {

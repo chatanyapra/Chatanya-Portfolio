@@ -7,6 +7,11 @@ import './components/GreetingPage.css'
 import './components/Navbar.css'
 import './components/WorkPage.css'
 import OldPortfolio from './assets/portfolioWebsite.jpg'
+import schoolImage from './assets/homepage.jpeg'
+import laravelSPimg from './assets/dashboardFornt.jpeg'
+import techerPanel from './assets/teacherpanel.jpeg'
+import quizImage from './assets/quizImage.png'
+import snakeImage from './assets/snakeGame.jpg'
 
 function App() {
   const aboutProject1= ['This is my first project, when i was learning the reactjs. I used some technology to make it beautiful. This will work properly only in big screens like- laptop.', 'Demo project made in order to grasp the concepts of react js'];
@@ -30,19 +35,19 @@ function App() {
         <WorkPage src={OldPortfolio} name='Portfolio' link='https://chatanyapra.github.io/myPortfolio'
         language={['React','CSS', 'HTML','Bootstrap']} about={aboutProject1[0]} desc={aboutProject1[1]}></WorkPage>
         
-        <WorkPage src='//picsum.photos/1920/1080' name='School Portal ( Student Panel )' link='https://cppublicschool9045website.000webhostapp.com/newSch.php'
+        <WorkPage src={schoolImage} name='School Portal ( Student Panel )' link='https://cppublicschool9045website.000webhostapp.com/newSch.php'
         language={['Php','CSS', 'HTML', 'Javascript','Bootstrap']} about={aboutProject2[0]} desc={aboutProject2[1]}></WorkPage>
 
-        <WorkPage src='//picsum.photos/1920/1080' name='School Portal ( Student Panel )' link='https://github.com/chatanyapra/school-management-student-laravel'
+        <WorkPage src={laravelSPimg} name='School Portal ( Student Panel )' link='https://github.com/chatanyapra/school-management-student-laravel'
         language={['Laravel', 'Php','CSS', 'HTML', 'Javascript','Bootstrap']} about={aboutProject3[0]} desc={aboutProject3[1]}></WorkPage>
 
-        <WorkPage src='//picsum.photos/1920/1080' name='School Portal ( Teacher Panel )' link='https://github.com/chatanyapra/school-website-teacher-portal'
+        <WorkPage src={techerPanel} name='School Portal ( Teacher Panel )' link='https://github.com/chatanyapra/school-website-teacher-portal'
         language={['Laravel', 'Php','CSS', 'HTML', 'Javascript','Bootstrap']} about={aboutProject4[0]} desc={aboutProject4[1]}></WorkPage>
 
-        <WorkPage src='//picsum.photos/1920/1080' name='Quiz Exam' link='https://github.com/chatanyapra/quizFilesNew'
+        <WorkPage src={quizImage} name='Quiz Exam' link='https://github.com/chatanyapra/quizFilesNew'
         language={['Php','CSS', 'HTML', 'Javascript']} about={aboutProject5[0]} desc={aboutProject5[1]}></WorkPage>
         
-        <WorkPage src='//picsum.photos/1920/1080' name='Snake Game' link='https://chatanyaacademy.000webhostapp.com/snake.html'
+        <WorkPage src={snakeImage} name='Snake Game' link='https://chatanyaacademy.000webhostapp.com/snake.html'
         language={['CSS', 'HTML', 'Javascript']} about={aboutProject6[0]} desc={aboutProject6[1]}></WorkPage>
         
       </div> 

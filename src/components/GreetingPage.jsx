@@ -20,8 +20,6 @@ export default function GreetingPage() {
   // const screenWidth= window.innerWidth;
 
   useEffect(() => {
-    // const boxContainer= box2Container.current;
-    // const boxDist= boxContainer.getBoundingClientRect();
     const handleScroll = () => {
 
       setScrollPosition(()=>{
