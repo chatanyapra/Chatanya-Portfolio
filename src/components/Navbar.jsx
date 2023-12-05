@@ -1,5 +1,12 @@
 import UserImage from '../assets/my-image.jpg'
 import UserLogo from '../assets/portfolioLogo.png'
+import resumePDF from '../assets/ChatanyaPratapwebsite.pdf';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 
 export default function Navbar() {
 
@@ -11,15 +18,24 @@ export default function Navbar() {
       overLayBox.classList.toggle('overLayBoxToggle');
       checkboxNavbur.classList.toggle('checkboxNavburChecked');
     };
+    const openResume = () => {
+      const pdfUrl = resumePDF;
+      window.open(pdfUrl, '_blank');
+    };
+    const openResumehandleCheckboxClick= ()=>{
+      handleCheckboxClick();
+      openResume();
+    }
   return (
     <>
+    {/* <Router> */}
       <div className='navbar-main w-full bg-gray-900 h-16 text-white flex justify-between z-20'>
         <div className='navbar_logo w-40 h-full relative text-center'><img src={UserLogo} style={{marginTop: '-23px'}} className='ml-2 w-36 h-28'/> <div className="triangle"></div></div>
         <div className='navbtns mr-5 hidden justify-between md:flex'>
-          <button className='nav-btn w-32 mx-4 my-3'>Home</button>
-          <button className='nav-btn w-32 mx-4 my-3'>About </button>
+        <Link to="/"><button className='nav-btn w-32 mx-4 my-3'>Home</button></Link>
+          <Link to="/about"><button className='nav-btn w-32 mx-4 my-3'>About</button></Link>
           <button className='nav-btn w-32 mx-4 my-3'>Contact</button>
-          <button className='nav-btn w-32 mx-4 my-3'>Resume</button>
+          <button className='nav-btn w-32 mx-4 my-3' onClick={openResume}>Resume</button>
         </div>
         <input type="checkbox" onClick={handleCheckboxClick} id="checkboxNavbur"/>
         <label htmlFor="checkboxNavbur" className="toggleBars my-2 mr-5 flex md:hidden">
@@ -36,10 +52,11 @@ export default function Navbar() {
           <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Home</button>
           <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>About </button>
           <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Contact</button>
-          <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Resume</button>
+          <button className='nav-btn w-full h-12 my-3 text-xl' onClick={openResumehandleCheckboxClick}>Resume</button>
         </div>
       </div>
       <div className='overLayBox fixed w-full h-full top-0 left-0 right-0 bottom-0 hidden z-30' onClick={handleCheckboxClick}></div>
+    {/* </Router> */}
     </>
   )
 }

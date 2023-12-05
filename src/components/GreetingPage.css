@@ -34,6 +34,9 @@
     padding: 0; 
     transform: translate(-10%, 50%);
   }
+  .image-robot{
+    right: -99px;
+  }
 }
 .image-robot{
     width: 500px !important;
