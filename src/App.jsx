@@ -1,7 +1,6 @@
 import './App.css'
 import GetInTouch from './components/GetInTouch';
 import GreetingPage from './components/GreetingPage'
-import Navbar from './components/Navbar'
 import WorkPage from './components/WorkPage';
 import './components/GreetingPage.css'
 import './components/Navbar.css'
@@ -12,6 +11,8 @@ import laravelSPimg from './assets/dashboardFornt.jpeg'
 import techerPanel from './assets/teacherpanel.jpeg'
 import quizImage from './assets/quizImage.png'
 import snakeImage from './assets/snakeGame.jpg'
+import AboutMe from './components/AboutMe';
+import Navbar from './components/Navbar';
 
 function App() {
   const aboutProject1= ['This is my first project, when i was learning the reactjs. I used some technology to make it beautiful. This will work properly only in big screens like- laptop.', 'Demo project made in order to grasp the concepts of react js'];
@@ -27,8 +28,7 @@ function App() {
                         'Snake game using Javascript and understanding the basic concepts']
                         
   return (
-    <div className='web-container h-screen'>
-      <Navbar></Navbar>
+    <div>
       <GreetingPage></GreetingPage>
       <div className='w-full justify-evenly flex flex-wrap relative m-auto p-5 pt-60 sm:pt-40 bg-gray-900'>
         <h1 className='absolute top-40 sm:top-20 text-7xl text-white'  style={{ fontFamily: "Exo, sans-serif"}}>My Work</h1>
