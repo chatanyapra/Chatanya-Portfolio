@@ -8,9 +8,9 @@ export default function GetInTouch() {
             <h3 className='text-white py-4'>©2023 Designs by Chatanya Pratap. All right reserved.</h3>
         </div>
         <div className="w-52 m-auto md:m-0 flex justify-around py-9">
-            <a href="#" target="_blank"><i className="fab fa-instagram text-white text-4xl"></i></a>
-            <a href="#" target="_blank"><i className="fab fa-linkedin text-white text-4xl"></i></a>
-            <a href="#" target="_blank"><i className="fab fa-github text-white text-4xl"></i></a>
+            <a href="https://www.instagram.com/chatanyapratap/" target="_blank"><i className="fab fa-instagram text-white text-4xl"></i></a>
+            <a href="https://www.linkedin.com/in/chatanya-pratap-ab410a277/" target="_blank"><i className="fab fa-linkedin text-white text-4xl"></i></a>
+            <a href="https://github.com/chatanyapra" target="_blank"><i className="fab fa-github text-white text-4xl"></i></a>
         </div>
     </div>
   )
