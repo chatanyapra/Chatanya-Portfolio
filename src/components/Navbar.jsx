@@ -26,14 +26,17 @@ export default function Navbar() {
       handleCheckboxClick();
       openResume();
     }
+    const topFunction = ()=> {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   return (
     <>
-    {/* <Router> */}
       <div className='navbar-main w-full bg-gray-900 h-16 text-white flex justify-between z-20'>
         <div className='navbar_logo w-40 h-full relative text-center'><img src={UserLogo} style={{marginTop: '-23px'}} className='ml-2 w-36 h-28'/> <div className="triangle"></div></div>
         <div className='navbtns mr-5 hidden justify-between md:flex'>
         <Link to="/"><button className='nav-btn w-32 mx-4 my-3'>Home</button></Link>
-          <Link to="/about"><button className='nav-btn w-32 mx-4 my-3'>About</button></Link>
+          <Link to="/about"><button className='nav-btn w-32 mx-4 my-3' onClick={topFunction}>About</button></Link>
           <button className='nav-btn w-32 mx-4 my-3'>Contact</button>
           <button className='nav-btn w-32 mx-4 my-3' onClick={openResume}>Resume</button>
         </div>
@@ -56,7 +59,6 @@ export default function Navbar() {
         </div>
       </div>
       <div className='overLayBox fixed w-full h-full top-0 left-0 right-0 bottom-0 hidden z-30' onClick={handleCheckboxClick}></div>
-    {/* </Router> */}
     </>
   )
 }
