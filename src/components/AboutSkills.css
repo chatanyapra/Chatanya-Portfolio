@@ -1,0 +1,79 @@
+  .about-skills{
+    height: 400px; top: 200px;
+    margin: auto;
+    border-image-slice: 1;
+    border-image-source:linear-gradient(to right, #ffd630 0%, rgb(94 234 212) 50%, #ffd630 100%);
+    box-shadow: 0 0 30px -5px #0000cc;
+  }
+  .skills-main-circle{
+    z-index: 20;
+    cursor: pointer;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 255, 0.427);
+    animation: mainMove 40s infinite normal ease;
+    animation-timing-function: linear;
+  }
+  .about-skills:hover ::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  .content-skill-main ::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  .content-skill-main ::-webkit-scrollbar-thumb  {
+    visibility: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(30, 29, 29, 0.642) 0%, #ffffff 50%, rgba(30, 29, 29, 0.642) 100%);
+  }
+  .skills-main-circle :nth-child(n){
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    animation: mymove 40s infinite normal ease;
+    animation-timing-function: linear;
+  }
+  .skills-main-circle :nth-child(1){
+    top: -20px; left: 140px;
+    color: #ffcc00; font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(46,91,173,0.6);
+  }
+  .skills-main-circle :nth-child(2){
+    top: 80px; left: 290px;
+    color: rgb(252, 136, 27); font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(46,91,173,0.6);
+  }
+  .skills-main-circle :nth-child(3){
+    top: 240px; left: 290px;
+    color: rgb(71, 255, 246); font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(46,91,173,0.6);
+  }
+  .skills-main-circle :nth-child(4){
+    top: 340px; left: 140px;
+    color: red; font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(46,91,173,0.6);
+  }
+  .skills-main-circle :nth-child(5){
+    top: 75px; left: -25px;
+    color: rgb(0, 85, 255); font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(46,91,173,0.6);
+  }
+  .skills-main-circle :nth-child(6){
+    top: 240px; left: -30px;
+    color: black; font-weight: bold;
+    text-shadow: 1px 1px 0px white, -1px -1px 0px white;
+  }
+  .content-skill-main{
+    top: 0; right:0;
+  }
+  .content-skill-main .skill-btn{
+    width: 130px;
+    height: 35px;
+  }
+  @keyframes mymove {
+      from {transform: rotate(360deg);}
+        to {transform: rotate(0deg);}
+  }
+  @keyframes mainMove {
+      from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+  }
