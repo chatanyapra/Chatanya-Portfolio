@@ -4,6 +4,7 @@ import GreetingPage from './components/GreetingPage'
 import WorkPage from './components/WorkPage';
 import './components/GreetingPage.css'
 import './components/AboutSkills.css'
+import './components/HologramEffect.css'
 import './components/Navbar.css'
 import './components/WorkPage.css'
 import OldPortfolio from './assets/portfolioWebsite.jpg'
