@@ -40,8 +40,8 @@ export default function AboutMe() {
   return (
     <div
       ref={box2Container}
-      className="box2-container overflow-hidden relative w-full bg-gray-900 z-10" style={{ minHeight: "900px", top: "650px" }}>
-      <div className="aboutme-box text-white rounded-2xl relative backdrop-opacity-5 z-20 backdrop-invert bg-black/50 py-7 overflow-x-hidden">
+      className="box2-container overflow-hidden relative w-full bg-gray-900" style={{ minHeight: "900px", top: "650px" }}>
+      <div className={"aboutme-box text-white rounded-2xl relative py-7 overflow-x-hidden z-10 backdrop-opacity-5 backdrop-invert bg-black/50"}>
         <i style={gearBox} className="gear-icon absolute fa-solid fa-gear"></i>
         <h1
           className="text-2xl md:text-3xl mx-12 my-6"
