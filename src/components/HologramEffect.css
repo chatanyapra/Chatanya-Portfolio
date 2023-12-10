@@ -1,0 +1,90 @@
+#ContainerHologram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.message-box-robot {
+  width: 100px; height: 40px; left: -30px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 10px;
+}
+.border-message{
+  position: absolute; right: -10.9px; bottom: -10.9px;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 20px solid #ffffff;
+  transform: rotateZ(-45deg);
+}
+.border-mess-int{
+  position: absolute; bottom: 1.5px; left: -8.5px;
+	border-left: 9px solid transparent;
+	border-right: 9px solid transparent;
+	border-top: 20px solid rgb(0, 0, 0);
+}
+.image-robot-hologram{
+  animation: robot-image 2s ease-in-out infinite;
+}
+@keyframes robot-image{
+  0% {
+    filter: contrast(100%);
+  }
+
+  50% {
+    filter: contrast(150%);
+  }
+
+  100% {
+    filter: contrast(100%);
+  }
+}
+  #rays {
+    z-index: 2;
+    position: relative;
+    bottom: -0.9em;
+    animation: rays 2s ease-in-out infinite;
+  }
+  .hologram-image {
+    position: relative;
+    top: 5em;
+    padding: 4%;
+    z-index: 3;
+    width: 300px; height: 200px;
+    backdrop-filter: blur(3.5px);
+    gap: 1em;
+    animation: float 2s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      position: relative;
+    }
+  
+    50% {
+      top: 50px;
+    }
+  
+    100% {
+      position: relative;
+    }
+  }
+  
+  @keyframes rays {
+    0% {
+      opacity: 0.5;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
