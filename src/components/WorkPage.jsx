@@ -6,7 +6,7 @@ export default function WorkPage(props) {
   }
   const lang= props.language;
   return (
-      <div className="card-container backdrop-invert bg-black my-20 relative top-0">
+      <div className="card-container bg-black my-20 relative top-0">
         <a href={props.link} className="hero-image-container">
           <img className="hero-image w-full h-full relative" src={props.src} alt="Spinning glass cube"/>
         </a>

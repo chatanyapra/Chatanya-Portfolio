@@ -13,8 +13,6 @@ import laravelSPimg from './assets/dashboardFornt.jpeg'
 import techerPanel from './assets/teacherpanel.jpeg'
 import quizImage from './assets/quizImage.png'
 import snakeImage from './assets/snakeGame.jpg'
-import AboutMe from './components/AboutMe';
-import Navbar from './components/Navbar';
 
 function App() {
   const aboutProject1= ['This is my first project, when i was learning the reactjs. I used some technology to make it beautiful. This will work properly only in big screens like- laptop.', 'Demo project made in order to grasp the concepts of react js'];
