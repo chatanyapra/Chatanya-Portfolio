@@ -35,9 +35,9 @@ export default function Navbar() {
       <div className='navbar-main w-full bg-gray-900 h-16 text-white flex justify-between z-20'>
         <div className='navbar_logo w-40 h-full relative text-center'><img src={UserLogo} style={{marginTop: '-23px'}} className='ml-2 w-36 h-28'/> <div className="triangle"></div></div>
         <div className='navbtns mr-5 hidden justify-between md:flex'>
-        <Link to="/"><button className='nav-btn w-32 mx-4 my-3'>Home</button></Link>
+          <Link to="/"><button className='nav-btn w-32 mx-4 my-3' onClick={topFunction}>Home</button></Link>
           <Link to="/about"><button className='nav-btn w-32 mx-4 my-3' onClick={topFunction}>About</button></Link>
-          <button className='nav-btn w-32 mx-4 my-3'>Contact</button>
+          <Link to="/contact"><button className='nav-btn w-32 mx-4 my-3' onClick={topFunction}>Contact</button></Link>
           <button className='nav-btn w-32 mx-4 my-3' onClick={openResume}>Resume</button>
         </div>
         <input type="checkbox" onClick={handleCheckboxClick} id="checkboxNavbur"/>
@@ -52,9 +52,9 @@ export default function Navbar() {
           <img className='w-full h-full rounded-full' src={UserImage} alt='...'/>
         </div>
         <div className='w-11/12 m-auto h-96 my-24 flex flex-col'>
-          <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Home</button>
-          <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>About </button>
-          <button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Contact</button>
+          <Link to="/"><button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Home</button></Link>
+          <Link to="/about"><button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>About </button></Link> 
+          <Link to="/contact"><button className='nav-btn w-full h-12 my-3 text-xl' onClick={handleCheckboxClick}>Contact</button></Link>
           <button className='nav-btn w-full h-12 my-3 text-xl' onClick={openResumehandleCheckboxClick}>Resume</button>
         </div>
       </div>

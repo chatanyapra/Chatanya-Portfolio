@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function GetInTouch() {
+export default function GetInTouch(props) {
   return (
     <div className='w-full h-fit bg-gray-900 p-10 md:p-24 flex justify-between flex-col md:flex-row'>
         <div className='w-fit'>  
