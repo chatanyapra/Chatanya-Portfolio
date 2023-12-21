@@ -26,7 +26,7 @@ export default function GreetingPage() {
   }, []); 
 
   return (
-    <div style={{minHeight: '1510px'}} className='greetingBox overflow-y-scroll md:overflow-y-hidden w-full bg-gray-900 relative'>
+    <div style={{minHeight: '1510px'}} className='greetingBox overflow-y-scroll md:overflow-y-hidden w-full bg-gray-900'>
       <div className='image-main flex space-around'>
           <div className="image-robot-container">
             <Lottie className='robot-anim' animationData={robotAnimation} loop={isMobile ? false : true} />

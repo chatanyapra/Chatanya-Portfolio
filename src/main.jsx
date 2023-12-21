@@ -13,7 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <div className='web-container h-screen'>
       <BrowserRouter>  
       <Navbar></Navbar>
-      {/* <App/> */}
         <Routes>
           <Route
             exact
