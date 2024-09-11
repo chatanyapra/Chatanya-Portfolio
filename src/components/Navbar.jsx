@@ -1,4 +1,4 @@
-import UserImage from '../assets/my-image.jpg'
+import UserImage from '../assets/profile-pic.png'
 import UserLogo from '../assets/portfolioLogo.png'
 import resumePDF from '../assets/ChatanyaPratapwebsite.pdf';
 import {
